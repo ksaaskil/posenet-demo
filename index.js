@@ -31,6 +31,9 @@ import {
 
 const videoWidth = 600;
 const videoHeight = 500;
+const showPoints = true;
+const showSkeleton = false;
+const showBoundingBox = false;
 const stats = new Stats();
 
 /**
@@ -164,10 +167,6 @@ function detectPoseInRealTimeWithoutGUI(video, net) {
       ctx.drawImage(video, 0, 0, videoWidth, videoHeight);
       ctx.restore();
     }
-
-    const showPoints = true;
-    const showSkeleton = true;
-    const showBoundingBox = true;
 
     // For each pose (i.e. person) detected in an image, loop through the poses
     // and draw the resulting skeleton and keypoints if over certain confidence
