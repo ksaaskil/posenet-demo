@@ -24,9 +24,6 @@ import {
   drawSkeleton,
   isMobile,
   toggleLoadingUI,
-  tryResNetButtonName,
-  tryResNetButtonText,
-  updateTryResNetButtonDatGuiCss,
 } from "./demo_util";
 
 const videoWidth = 600;
@@ -82,10 +79,6 @@ const defaultMobileNetMultiplier = isMobile() ? 0.5 : 0.75;
 const defaultMobileNetStride = 16;
 const defaultMobileNetInputResolution = 513;
 
-const defaultResNetMultiplier = 1.0;
-const defaultResNetStride = 32;
-const defaultResNetInputResolution = 250;
-
 const guiState = {
   algorithm: "single-pose",
   input: {
@@ -96,7 +89,7 @@ const guiState = {
     quantBytes: defaultQuantBytes,
   },
   singlePoseDetection: {
-    minPoseConfidence: 0.1,
+    minPoseConfidence: 0.11,
     minPartConfidence: 0.5,
   },
   multiPoseDetection: {
