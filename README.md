@@ -1,4 +1,4 @@
-# PoseNet Demo
+# [PoseNet Demo](https://ksaaskil.github.io/posenet-demo)
 
 Example of Using PoseNet, adapted from [this demo](https://github.com/tensorflow/tfjs-models/tree/master/posenet/demos).
 
